@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinépolis - Proyecto Escolar</title>
     
-    <!-- ESTILOS CSS MUY BÁSICOS -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,15 +13,13 @@
             background-color: #f4f4f4;
         }
 
-        /* 1. ENCABEZADO */
         header {
-            background-color: #002d72; /* Azul Cinépolis */
-            color: #ffc72c; /* Amarillo Cinépolis */
+            background-color: #002d72; 
+            color: #ffc72c; 
             text-align: center;
             padding: 15px;
         }
 
-        /* 2. BARRA DE NAVEGACIÓN */
         nav {
             background-color: #001f4d;
             text-align: center;
@@ -40,14 +37,12 @@
             color: #ffc72c;
         }
 
-        /* CONTENEDOR PRINCIPAL */
         .contenido {
             max-width: 900px;
             margin: 20px auto;
             padding: 10px;
         }
 
-        /* TÍTULOS */
         h2 {
             color: #002d72;
             border-bottom: 3px solid #ffc72c;
@@ -55,7 +50,6 @@
             margin-top: 30px;
         }
 
-        /* 3. TARJETAS DE PELÍCULAS */
         .lista-peliculas {
             display: flex;
             flex-wrap: wrap;
@@ -101,7 +95,6 @@
             font-weight: bold;
         }
 
-        /* 4. SECCIÓN CLUB CINÉPOLIS */
         .caja-club {
             background-color: white;
             border: 2px solid #002d72;
@@ -154,7 +147,6 @@
             border-radius: 4px;
         }
 
-        /* 5. FOOTER */
         footer {
             background-color: #002d72;
             color: white;
@@ -166,13 +158,11 @@
 </head>
 <body>
 
-    <!-- 1. ENCABEZADO -->
     <header id="inicio">
         <h1>Cinépolis</h1>
         <p>La Capital del Cine</p>
     </header>
 
-    <!-- 2. BARRA DE NAVEGACIÓN -->
     <nav>
         <a href="#inicio">Inicio</a>
         <a href="#cartelera">Cartelera</a>
@@ -180,10 +170,8 @@
         <a href="#club">Club Cinépolis</a>
     </nav>
 
-    <!-- CUERPO PRINCIPAL -->
     <div class="contenido">
 
-        <!-- 3. PELÍCULAS EN CARTELERA -->
         <section id="cartelera">
             <h2>Películas en Cartelera</h2>
             <div class="lista-peliculas">
@@ -192,7 +180,6 @@
                     <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=400&q=80" alt="Misión Espacial">
                     <h3>Misión Espacial</h3>
                     <p>Género: Acción</p>
-                    <!-- JS DIRECTO SIN USAR FUNCTION -->
                     <button class="btn-comprar" onclick="alert('¡Boleto reservado para Misión Espacial!');">Comprar Boleto</button>
                 </div>
 
@@ -213,7 +200,6 @@
             </div>
         </section>
 
-        <!-- 4. PRÓXIMOS ESTRENOS -->
         <section id="estrenos">
             <h2>Próximos Estrenos</h2>
             <div class="lista-peliculas">
@@ -235,18 +221,15 @@
             </div>
         </section>
 
-        <!-- 5. SECCIÓN CLUB CINÉPOLIS (LOGIN / REGISTRO) -->
         <section id="club">
             <h2>Club Cinépolis</h2>
             <div class="caja-club">
 
-                <!-- Botones para alternar entre Login y Registro en JS Directo -->
                 <div class="menu-botones">
                     <button class="btn-opcion" onclick="document.getElementById('form-login').style.display='block'; document.getElementById('form-registro').style.display='none';">Iniciar Sesión</button>
                     <button class="btn-opcion" onclick="document.getElementById('form-login').style.display='none'; document.getElementById('form-registro').style.display='block';">Registrarse</button>
                 </div>
 
-                <!-- FORMULARIO 1: INICIO DE SESIÓN -->
                 <form id="form-login" onsubmit="event.preventDefault(); alert('¡Bienvenido a Club Cinépolis!');">
                     <h3>Iniciar Sesión</h3>
                     <div class="campo">
@@ -262,7 +245,6 @@
                     <button type="submit" class="btn-enviar">Ingresar</button>
                 </form>
 
-                <!-- FORMULARIO 2: REGISTRO (Oculto por defecto) -->
                 <form id="form-registro" style="display: none;" onsubmit="event.preventDefault(); alert('¡Cuenta de Club Cinépolis creada exitosamente!');">
                     <h3>Crear Cuenta</h3>
                     <div class="campo">
@@ -288,7 +270,6 @@
 
     </div>
 
-    <!-- 6. PIE DE PÁGINA -->
     <footer>
         <p>Rivera Sánchez Victor Didier        5ºI        0648 </p>
     </footer>
